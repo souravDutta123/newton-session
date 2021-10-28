@@ -1,0 +1,27 @@
+.lighting-chain {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px;
+    width: 100px;
+}
+
+.light {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    animation: lighting 10s ease 2s infinite alternate;
+}
+
+@keyframes lighting {
+    0% {background-color: aqua;}
+    20% {background-color: blue;}
+    40% {background-color: deeppink;}
+    60% {background-color: red;}
+    80% {background-color: yellow;}
+    100% {background-color: green;}
+}
+
+body {
+    background-color: black;
+}

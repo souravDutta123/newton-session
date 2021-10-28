@@ -1,0 +1,12 @@
+1. What is flexbox?
+2. When should we use it?
+3. How does different properties of flexbox work?
+4. How to align item verticaly and horizontaly center?
+5. Difference between flexbox and grid?
+6. When should we use flexbox and when should we use grid?
+7. Explain css box model.
+8. Difference between border and outline.
+9. Relative vs Absolute
+10. Fixed vs Sticky
+11. Calculate height of an element with a fixed height content.
+12. Create a navigation bar using flexbox, position and box-model. 

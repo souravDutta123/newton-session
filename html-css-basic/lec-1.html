@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML + CSS</title>
+    <style>
+        .h1 {
+            color: black;
+            font-weight: bold;
+            margin: 0.67em 0;
+            font-size: 2em;
+        }
+
+        .background > ol > li {
+            list-style-type: lower-roman;
+        }
+
+        table, li, th, td {
+            border: 1px  black;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        .hello {
+            color: blue;
+        }
+    </style>
+    <script>
+        const data = [
+            {
+                firstname: 'Sachin',
+                lastname: 'Tendulkar'
+            },
+            {
+                firstname: 'Virat',
+                lastname: 'Kohli'
+            }
+        ]
+        function plotTable(data) {
+            const head = Object.keys(data[0]).map(key => `<th>${key}</th>`).join('')
+            const tableHTML = `<table>
+                    <thead>
+                        <tr>${head}</tr>
+                    </thead>
+                    
+                </table>` 
+            return tableHTML           
+        }
+        setTimeout(() => {
+            document.getElementById('container').innerHTML = plotTable(data)
+        }, 2000);
+        
+    </script>
+</head>
+<body>
+    <div class="background">
+        <div class="h1">Fruits</div>
+        <div>Orange</div>
+        <div>Mango</div>
+        <div>Grapes</div>
+    </div>
+    <div class="background">
+        <h1>Fruits</h1>
+        <ol>
+            <li class="hello">Orange</li>
+            <li>Mango</li>
+            <li>Grapes</li>
+        </ol>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    First name
+                </th>
+                <th>
+                    Last name
+                </th>
+                <th>
+                    Team
+                </th>
+                <th>
+                    Country
+                </th>
+                <th>
+                    No
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Sachin
+                </td>
+                <td>
+                    Tendulkar
+                </td>
+                <td>
+                    Men's International cricket hgasvhgasv ashgdvasghvah  ahsvuya
+                </td>
+                <td>
+                    India
+                </td>
+                <td>
+                    10
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Virat
+                </td>
+                <!-- <td>
+                    Men's cricket
+                </td> -->
+                <td>
+                    India
+                </td>
+                <td>
+                    10
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Category
+                </th>
+                <th>
+                    Brands
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">Clothing</td>
+                <td>Puma</td>
+            </tr>
+            <tr>
+                <td>Gucci</td>
+            </tr>
+            <tr>
+                <td>H&M</td>
+            </tr>
+            <tr>
+                <td>ADIDAS</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Cars</td>
+                <td>Tata motors</td>
+            </tr>
+            <tr>
+                <td>Mahindra</td>
+            </tr>
+            <tr>
+                <td>mustang</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="margin-top: 50px;">
+        <h1>Trying inputs</h1>
+        <input type="text" name="abc">
+        <input type="checkbox" name="test" id="test">
+        <input type="datetime-local">
+    </div>
+    <div id='container'>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+five boxes with width 100px
+available space 1000px
+
+left - 500px
+
+Property                space within                    space-wrapping
+space-between           500 / 4 = 125px                 0
+space-around            (500 / (8 + 2)) * 2 = 100px     50    
+space-evenly            (500 / (n + 1)) = 83.33         (500 / (n + 1)) = 83.33
+
+
+
+=========================================
+
+width = 1000px 
+
+300px 
+
+space left for growth comp = 700px
+space left to grow = 700px - 200px = 500px
+
+2nd = 500 / 3 = 166.67 + 100px = 266
+3rd = (500 / 3) * 2 = 333.33 + 100px = 433

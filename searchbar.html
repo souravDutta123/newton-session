@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .searchbar {
+            display: grid;
+            grid-template-columns: 100px auto 100px;
+            grid-gap: 20px;
+        }
+        .input-container {
+            flex-grow: 1;
+            background-color: aqua;
+        }
+
+        .search-icon {
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="searchbar">
+        <div class="site-icon">My Site</div>
+        <div class="input-container">
+            <input type="text" style="width: calc(100% - 10px); height: 100%;">
+        </div>
+        <div class="search-icon">search</div>
+    </div>
+</body>
+</html>

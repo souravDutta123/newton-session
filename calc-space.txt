@@ -1,0 +1,5 @@
+space-around:
+
+[space][component][space][space][component][space]
+83.33               83.33 83.33             83.33
+500 / (3 * 2) = 83.33

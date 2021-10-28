@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid brown;
+            padding: 10px;
+        }
+        .sticky {
+            position: sticky;
+            position: -webkit-sticky;
+            padding: 10px;
+            border: 1px solid dodgerblue;
+            top: 0;
+            margin: 10px 0;
+            background-color: dodgerblue;
+            color: white;
+        }
+        .static {
+            border: 1px solid;
+            padding: 10px;
+        }
+        .others {
+            height: 100vh;
+            width: 100%;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="others" style="height: auto;">
+        Some content at top.
+    </div>
+    <div class="sticky">
+        I am sticky.
+    </div>
+    <div class="container">
+        <div class="static">I am static.</div>
+    </div>
+    <div class="others"></div>
+</body>
+</html>
